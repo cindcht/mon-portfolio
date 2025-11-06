@@ -1,4 +1,4 @@
-/* general settings*/
+/*header settings*/
 
 header {
   text-align: center;
@@ -7,25 +7,66 @@ header {
   color: rgb(150, 58, 204);
 }
 
+
 button {
   border-radius: 25px;
-  box-shadow: 10px 5px 5px rgb(150, 58, 204);
+  width: 150px;
+  height: 30px;
+  font-size: medium;
+  border-style: hidden;
+  
+
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav button {
+  position: relative;
   background: linear-gradient(
     rgb(221, 170, 217),
     rgb(245, 170, 245),
     rgb(219, 89, 176)
   );
-  width: 150px;
-  height: 30px;
-  font-size: medium;
+  overflow: hidden;
+  transition: border-color 0.3s ease, color 0.3s ease; /*for the transition*/
 }
+
+            /*animation nav bar*/
 
 button:hover {
   transform: scale(1.5);
   transition: all 0.5s ease;
-  background: white;
-  transform: rotate(45deg);
+  background:  rgb(222, 154, 222);
+} 
+
+nav button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 100%;
+   background: linear-gradient(
+    rgb(221, 170, 217),
+    rgb(140, 97, 140),
+    rgb(219, 89, 176)
+  );
+
+  animation: move_eye 3s linear infinite alternate;
+  opacity: 1;
 }
+
+@keyframes move_eye {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/*body and main settings*/
 
 h1 {
   font-weight: bold;
@@ -35,7 +76,29 @@ h1 {
   font-size: xx-large;
   margin-bottom: 100px;
   margin-top: 80px;
+  text-align: center;
 }
+
+li {
+  grid-template-columns: repeat(auto-fit, 1fr);
+  padding: 15px;
+  list-style-type: none;
+}
+
+
+body {
+  background-color: rgb(252, 205, 255);
+  opacity: 3;
+  text-align: center;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  box-shadow: 10px 5px 5px rgb(150, 58, 204);
+}
+
+              /*footer settings*/
 
 footer {
   position: fixed;
@@ -48,23 +111,8 @@ footer {
   text-align: center;
 }
 
-main {
-  text-align: center;
-}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-li {
-  grid-template-columns: repeat(auto-fit, 1fr);
-  padding: 15px;
-  list-style-type: none;
-}
 
-body {
-  background-color: rgb(252, 205, 255);
-  opacity: 3;
-}
 
-.icon {
-  height: 40px;
-  width: 40px;
-  box-shadow: 10px 5px 5px rgb(150, 58, 204);
-}
+
