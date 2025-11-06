@@ -1,0 +1,12 @@
+#japanflag {
+  display: flex;
+  flex-direction: left;
+}
+
+#JV {
+  float: right;
+}
+
+#passionpics {
+  margin-top: 70px;
+}

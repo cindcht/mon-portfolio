@@ -1,0 +1,70 @@
+/* general settings*/
+
+header {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: rgb(150, 58, 204);
+}
+
+button {
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px rgb(150, 58, 204);
+  background: linear-gradient(
+    rgb(221, 170, 217),
+    rgb(245, 170, 245),
+    rgb(219, 89, 176)
+  );
+  width: 150px;
+  height: 30px;
+  font-size: medium;
+}
+
+button:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease;
+  background: white;
+  transform: rotate(45deg);
+}
+
+h1 {
+  font-weight: bold;
+  color: rgb(150, 58, 204);
+  background: rgb(243, 175, 243);
+  margin: 0 auto;
+  font-size: xx-large;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(243, 175, 243);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+}
+
+li {
+  grid-template-columns: repeat(auto-fit, 1fr);
+  padding: 15px;
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(252, 205, 255);
+  opacity: 3;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  box-shadow: 10px 5px 5px rgb(150, 58, 204);
+}
