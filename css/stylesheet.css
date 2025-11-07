@@ -20,7 +20,7 @@ nav{
   font-weight: bold;
 }
 
-nav :hover{
+nav ul :hover{
   transform: scale(1.2);
   background-color: white; 
 }
