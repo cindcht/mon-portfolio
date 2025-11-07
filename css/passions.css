@@ -1,12 +1,15 @@
 #japanflag {
   display: flex;
   flex-direction: left;
-}
+} /*pic position*/
 
 #JV {
   float: right;
-}
+} /*pic position*/
 
 #passionpics {
   margin-top: 70px;
-}
+} /*space between the pics and the text (article) above*/
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

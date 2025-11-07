@@ -1,82 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+} /* content full screen*/
+
 /*header settings*/
 
 header {
   text-align: center;
   font-weight: bold;
-  font-size: xx-large;
-  color: rgb(150, 58, 204);
+  color: rgb(114, 86, 145);
+  font-size:xx-large;
 }
 
+                /* nav bar settings*/
 
-button {
-  border-radius: 25px;
-  width: 150px;
-  height: 30px;
-  font-size: medium;
-  border-style: hidden;
-  
-
+nav{
+  margin-top: 25px;
+  margin-bottom: 100px;
+  font-weight: bold;
 }
 
-nav a {
+nav :hover{
+  transform: scale(1.2);
+  background-color: white; 
+}
+
+nav li {
+  display: inline;
+  background: rgba(243, 175, 243, 0.553);
+   color: rgb(114, 86, 145);
+   border-radius: 30px;
+}
+
+a {
   text-decoration: none;
-}
-
-nav button {
-  position: relative;
-  background: linear-gradient(
-    rgb(221, 170, 217),
-    rgb(245, 170, 245),
-    rgb(219, 89, 176)
-  );
-  overflow: hidden;
-  transition: border-color 0.3s ease, color 0.3s ease; /*for the transition*/
-}
-
-            /*animation nav bar*/
-
-button:hover {
-  transform: scale(1.5);
-  transition: all 0.5s ease;
-  background:  rgb(222, 154, 222);
-} 
-
-nav button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 30%;
-  height: 100%;
-   background: linear-gradient(
-    rgb(221, 170, 217),
-    rgb(140, 97, 140),
-    rgb(219, 89, 176)
-  );
-
-  animation: move_eye 3s linear infinite alternate;
-  opacity: 1;
-}
-
-@keyframes move_eye {
-  from {
-    left: -30%;
-  }
-  to {
-    left: 100%;
-  }
+  color: rgb(114, 86, 145);
 }
 
 /*body and main settings*/
 
 h1 {
   font-weight: bold;
-  color: rgb(150, 58, 204);
-  background: rgb(243, 175, 243);
-  margin: 0 auto;
+  color: rgb(114, 86, 145);
+  background: rgba(243, 175, 243, 0.553);
   font-size: xx-large;
   margin-bottom: 100px;
   margin-top: 80px;
   text-align: center;
+  border-radius: 80%;
 }
 
 li {
@@ -85,20 +56,29 @@ li {
   list-style-type: none;
 }
 
+body {
+  text-align: center;
+
+}
 
 body {
-  background-color: rgb(252, 205, 255);
-  opacity: 3;
-  text-align: center;
+  background-image: url(https://img.freepik.com/vecteurs-premium/moderne-fond-onde-elegant_634677-7561.jpg?semt=ais_hybrid&w=740&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 
 .icon {
   height: 40px;
   width: 40px;
   box-shadow: 10px 5px 5px rgb(150, 58, 204);
-}
+}/*titles' icons*/
 
-              /*footer settings*/
+img {
+  border-radius: 50px;
+} /*all photos*/
+
+                /*footer settings*/
 
 footer {
   position: fixed;
@@ -107,9 +87,10 @@ footer {
   width: 100%;
   background: rgb(243, 175, 243);
   font-weight: bold;
-  color: white;
+  color: rgb(114, 86, 145);
   text-align: center;
 }
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
