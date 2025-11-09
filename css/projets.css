@@ -1,0 +1,46 @@
+.projets {
+    margin-top: 30px;
+}
+
+embed {
+    border-radius: 35px;
+} /*pdf photo border*/
+
+
+                    /*buttons animation*/
+
+ .projetsanimation {
+  position: relative;
+  background: rgba(168, 118, 168, 0.553);
+  color: #390440;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.projetsanimation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(252, 2, 127, 0.9) 25%,
+    rgba(255, 0, 0, 0.8) 50%,
+    rgba(238, 135, 135, 0.9) 75%
+  );
+  border-radius: 20px;
+  animation: move_eye 3s linear infinite alternate;
+  opacity: 1;
+}
+
+@keyframes move_eye {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
