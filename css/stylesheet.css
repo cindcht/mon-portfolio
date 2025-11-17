@@ -8,7 +8,7 @@
 header {
   text-align: center;
   font-weight: bold;
-  color: rgb(114, 86, 145);
+  color: rgb(254, 253, 254);
   font-size:xx-large;
 }
 
@@ -18,7 +18,10 @@ nav{
   margin-top: 25px;
   margin-bottom: 100px;
   font-weight: bold;
+  
 }
+
+nav :hover{transform: rotate(350deg);}
 
 nav ul li :hover{
   transform: scale(1.2);
@@ -26,10 +29,14 @@ nav ul li :hover{
   border-radius: 15px;
 }
 
+
+
 nav li {
   display: inline;
    color: rgb(114, 86, 145);
 }
+
+
 
 a {
   text-decoration: none;
@@ -55,12 +62,9 @@ li {
   list-style-type: none;
 }
 
-body {
-  text-align: center;
 
-}
 
-body {
+body {text-align: center;
   background-image: url(https://img.freepik.com/vecteurs-premium/moderne-fond-onde-elegant_634677-7561.jpg?semt=ais_hybrid&w=740&q=80);
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,8 +79,13 @@ body {
 
 img {
   border-radius: 50px;
-} /*all photos*/
+  max-width: 100%;
+height: auto;
+} /*all photos  round borders*/
 
+figure :hover{
+  transform: scale(1.5);
+}
                 /*footer settings*/
 
 footer {
@@ -91,8 +100,25 @@ footer {
 }
 
 
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/*on mobile*/
+
+@media (min-width: 768px) {
+nav li {display: grid;
+  
+   color: rgb(114, 86, 145);
+}
+
+footer {
+  display: grid;
+}
 
 
+h1 { 
+  font-size: clamp(2rem, 1.75rem + 1vw, 2.5rem); 
+}
 
+}
