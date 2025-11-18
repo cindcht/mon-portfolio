@@ -8,7 +8,7 @@
 header {
   text-align: center;
   font-weight: bold;
-  color: rgb(254, 253, 254);
+  color: var(--header-colour);
   font-size:xx-large;
 }
 
@@ -25,7 +25,7 @@ nav :hover{transform: rotate(350deg);}
 
 nav ul li :hover{
   transform: scale(1.2);
-  background-color: rgb(255, 255, 255);
+  background-color: var(--bg-nav-bar-hover);
   border-radius: 15px;
 }
 
@@ -33,7 +33,7 @@ nav ul li :hover{
 
 nav li {
   display: inline;
-   color: rgb(114, 86, 145);
+   color: var(--colour-nav-bar);
 }
 
 
@@ -47,8 +47,8 @@ a {
 
 h1 {
   font-weight: bold;
-  color: rgb(114, 86, 145);
-  background: rgba(243, 175, 243, 0.553);
+  color: var(--h1-colour);
+  background: var(--h1-bg);
   font-size: xx-large;
   margin-bottom: 100px;
   margin-top: 80px;
@@ -74,7 +74,7 @@ body {text-align: center;
 .icon {
   height: 40px;
   width: 40px;
-  box-shadow: 10px 5px 5px rgb(150, 58, 204);
+  box-shadow: var(--icon-box-shadow);
 }/*titles' icons*/
 
 img {
@@ -93,9 +93,9 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(243, 175, 243);
+  background: var(--footer-bg);
   font-weight: bold;
-  color: rgb(114, 86, 145);
+  color: var(--footer-colour);
   text-align: center;
 }
 

@@ -24,12 +24,7 @@ embed {
   top: 0;
   width: 30%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(252, 2, 127, 0.9) 25%,
-    rgba(255, 0, 0, 0.8) 50%,
-    rgba(238, 135, 135, 0.9) 75%
-  );
+  background: var(--button-animation-colour);
   border-radius: 20px;
   animation: move_eye 3s linear infinite alternate;
   opacity: 1;
