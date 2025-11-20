@@ -78,14 +78,11 @@ body {text-align: center;
 }/*titles' icons*/
 
 img {
-  border-radius: 50px;
   max-width: 100%;
 height: auto;
 } /*all photos  round borders*/
 
-figure :hover{
-  transform: scale(1.5);
-}
+
                 /*footer settings*/
 
 footer {
@@ -97,8 +94,7 @@ footer {
   font-weight: bold;
   color: var(--footer-colour);
   text-align: center;
-}
-
+} 
 
 
 
@@ -121,4 +117,34 @@ h1 {
   font-size: clamp(2rem, 1.75rem + 1vw, 2.5rem); 
 }
 
+}
+
+
+
+ #headeranim {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, color 0.5s ease;
+}
+
+#headeranim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 5%;
+  background: var(--button-animation-colour);
+  border-radius: 20px;
+  animation: move_eye 6s linear infinite alternate;
+  opacity: 1;
+}
+
+@keyframes move_eye {
+  from {
+    left: -5%;
+  }
+  to {
+    left: 100%;
+  }
 }
