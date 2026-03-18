@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+} /* content full screen*/
+
+/*header settings*/
+
+header {
+  text-align: left;
+  font-weight: bold;
+  color: var(--header-colour);
+  font-size:xx-large;
+}
+
+                /* nav bar settings*/
+
+nav{
+  margin-top: 25px;
+  margin-bottom: 100px;
+  font-weight: bold;
+   float: right;
+  
+}
+
+nav :hover{transform: rotate(350deg);}
+
+nav ul li :hover{
+  transform: scale(1.2);
+  background-color: var(--bg-nav-bar-hover);
+  border-radius: 15px;
+}
+
+
+
+nav li {
+  display: inline;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+/*body and main settings*/
+
+h1 {
+  font-weight: bold;
+  color: var(--h1-colour);
+  background: var(--h1-bg);
+  font-size: xx-large;
+  margin-bottom: 100px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+li {
+  grid-template-columns: repeat(auto-fit, 1fr);
+  padding: 15px;
+  list-style-type: none;
+}
+
+
+
+body {text-align: center;
+ background-color: #F3F0E7;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.icon {
+  height: 40px;
+  width: 40px;
+  box-shadow: var(--icon-box-shadow);
+}/*titles' icons*/
+
+img {
+  max-width: 100%;
+height: auto;
+border-radius: 30px;
+} /*all photos  round borders*/
+
+
+                /*footer settings*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--footer-bg);
+  font-weight: bold;
+  color: var(--footer-colour);
+  text-align: center;
+} 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*on mobile*/
+
+@media (min-width: 768px) {
+nav li {display: grid;
+  
+   color: rgb(114, 86, 145);
+}
+
+footer {
+  display: grid;
+}
+
+
+h1 { 
+  font-size: clamp(2rem, 1.75rem + 1vw, 2.5rem); 
+}
+
+}
+
+
+
+ #headeranim {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, color 0.5s ease;
+}
+
+#headeranim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 5%;
+  background: var(--button-animation-colour);
+  border-radius: 20px;
+  animation: move_eye 6s linear infinite alternate;
+  opacity: 1;
+}
+
+@keyframes move_eye {
+  from {
+    left: -5%;
+  }
+  to {
+    left: 100%;
+  }
+}

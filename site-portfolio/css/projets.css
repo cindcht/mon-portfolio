@@ -1,0 +1,30 @@
+.projets {
+    margin-top: 30px;
+}
+
+.imgprojets {
+  height: 150px;
+  width: 100px;
+}
+
+figure :hover{
+  transform: scale(2.3);
+}
+
+img{
+  border-radius: 5px;
+}
+
+
+#picsprojects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+
+
+
