@@ -1,6 +1,7 @@
 <?php
 
 $page_base = './';
+$page_styles = ['index'];
 
 
 
@@ -25,13 +26,16 @@ $page_base = './';
             <p>
                 <h1> <img src="images/education.png" alt="" class="icon"/> Expériences et formations</h1>
             <ul>
-                <li>Licence DEUST Webmaster et Métiers de l'Internet, <a href="https://www.univ-littoral.fr/" target="_blank">ULCO</a> - Calais</li>
-                <li>Formation Développeur Intégrateur Web, <a href="https://www.simplon.co/" target="_blank">Simplon </a>, Boulogne-Sur-Mer</li>
-                <li>Master 1 Langues et Technologies, <a href="https://www.univ-littoral.fr/" target="_blank">ULCO</a></li>
-                <li>Licence Langues Etrangères Appliquées, Anglais/Espagnol, <a href="https://www.univ-littoral.fr/" target="_blank">ULCO</a>, Boulogne-Sur-Mer</li>
-                <li>Administration à <a href="https://www.univ-littoral.fr/" target="_blank">ULCO</a>, Boulogne-Sur-Mer</li>
-                <li>Fille Au Pair en Angleterre</li>
-                <li>Animatrice Périscolaire</li>
+            <?php 
+            require "bdd.php";
+            
+            ?>
+
+            <?php 
+            foreach ($listeformations as $formation) {
+                echo $formation['nom'] . " - " . $formation['année'] . "<br>";
+}
+            ?>
             </ul>
             </p>
        

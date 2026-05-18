@@ -1,11 +1,16 @@
 <head>
+    
     <base href="<?= $page_base ?>">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/colours.css">
-    <title>Accueil</title>
+   <title><?= $page_title ?? 'Accueil' ?></title>
+    <?php
+    foreach (($page_styles ?? []) as $style) {
+        echo "    <link rel='stylesheet' href='css/{$style}.css'>\n";
+    }
+    ?>
     
 </head>

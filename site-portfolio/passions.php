@@ -1,6 +1,8 @@
 <?php
 
 $page_base = './';
+$page_title = 'Passions';
+$page_styles = ['passions'];
 
 
 ?>

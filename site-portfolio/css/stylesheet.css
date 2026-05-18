@@ -1,7 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
-} /* content full screen*/
+}
+
+/* content full screen*/
 
 /*header settings*/
 
@@ -9,22 +11,24 @@ header {
   text-align: left;
   font-weight: bold;
   color: var(--header-colour);
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
-                /* nav bar settings*/
+/* nav bar settings*/
 
-nav{
+nav {
   margin-top: 25px;
   margin-bottom: 100px;
   font-weight: bold;
-   float: right;
-  
+  float: right;
+
 }
 
-nav :hover{transform: rotate(350deg);}
+nav :hover {
+  transform: rotate(350deg);
+}
 
-nav ul li :hover{
+nav ul li :hover {
   transform: scale(1.2);
   background-color: var(--bg-nav-bar-hover);
   border-radius: 15px;
@@ -63,8 +67,9 @@ li {
 
 
 
-body {text-align: center;
- background-color: #F3F0E7;
+body {
+  text-align: center;
+  background-color: #F3F0E7;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -74,16 +79,20 @@ body {text-align: center;
   height: 40px;
   width: 40px;
   box-shadow: var(--icon-box-shadow);
-}/*titles' icons*/
+}
+
+/*titles' icons*/
 
 img {
   max-width: 100%;
-height: auto;
-border-radius: 30px;
-} /*all photos  round borders*/
+  height: auto;
+  border-radius: 30px;
+}
+
+/*all photos  round borders*/
 
 
-                /*footer settings*/
+/*footer settings*/
 
 footer {
   position: fixed;
@@ -94,34 +103,14 @@ footer {
   font-weight: bold;
   color: var(--footer-colour);
   text-align: center;
-} 
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/*on mobile*/
-
-@media (min-width: 768px) {
-nav li {display: grid;
-  
-   color: rgb(114, 86, 145);
-}
-
-footer {
-  display: grid;
-}
-
-
-h1 { 
-  font-size: clamp(2rem, 1.75rem + 1vw, 2.5rem); 
-}
-
 }
 
 
 
- #headeranim {
+/*animation header*/
+
+
+#headeranim {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -144,7 +133,37 @@ h1 {
   from {
     left: -5%;
   }
+
   to {
     left: 100%;
+  }
+}
+
+/*on mobile*/
+
+@media screen and (max-width: 480px) {
+
+  header {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
   }
 }
