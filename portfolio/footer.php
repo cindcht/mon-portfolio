@@ -1,0 +1,1 @@
+ <footer> Cindy DAUCHART - Mon portfolio </footer>

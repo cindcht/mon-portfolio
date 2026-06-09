@@ -1,0 +1,17 @@
+/*colours*/
+
+:root {
+  --header-colour: rgb(229, 48, 48);
+  --bg-nav-bar-hover: white;
+  --icon-box-shadow: 10px 5px 5px rgb(229, 48, 48);
+  --h1-bg: white;
+  --h1-colour: rgb(229, 48, 48);
+  --footer-colour: rgb(229, 48, 48);
+  --footer-bg: white;
+  --button-animation-colour: linear-gradient(to right,
+      rgba(252, 2, 177, 0.9) 25%,
+      rgba(252, 74, 199, 0.8) 50%,
+      rgba(255, 112, 219, 0.9) 75%);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
