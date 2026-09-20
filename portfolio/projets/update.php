@@ -21,7 +21,7 @@ $id = (int) ($_GET['id'] ?? 0);
 $projet = find('projets', $id);
 
 
-// Si aucun utilisateur n’est trouvé, redirection vers la liste
+// Si aucun projet n’est trouvé, redirection vers la liste
 if (!$projet) {
     header('location:../projets/index.php');
     exit;

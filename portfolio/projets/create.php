@@ -152,6 +152,10 @@ $page_styles = ['projets'];
         </ul>
       </fieldset>
 
+      <section>
+        <h1></h1>
+      </section>
+
       <section class="form-buttons">
         <button type="submit" name="ajouter">Ajouter</button>
         <a href="projets/index.php" class="btn-cancel">Annuler</a>
